@@ -3,30 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
     <title>Question-answering-PyTorch</title>
 </head>
 <body>
-    <h1>Question-answering-PyTorch</h1>
-    
-    <form action="/answer" method="post">
-        <label for="context">Context:</label>
-        <textarea id="context" name="context" rows="4" cols="50"></textarea><br>
+    <div class="container">
+        <h1>Question-answering-PyTorch</h1>
+        
+        <form action="/answer" method="post">
+            <label for="context">Context:</label>
+<textarea id="context" name="context" rows="4" cols="50" placeholder="Enter context here..."></textarea><br>
 
-        <label for="question">Question:</label>
-        <input type="text" id="question" name="question"><br>
+<label for="question">Question:</label>
+<input type="text" id="question" name="question" placeholder="Enter your question...">
 
-        <input type="submit" value="Get Answer">
-    </form>
+<div class="containerb">
+    <button type="submit" class="btn btn-primary">Get Answer</button>
+</div>
+            <!-- <input type="submit" value="Get Answer"> -->
+        </form>
+    <div class="container2">
+        {% if context %}
+            <div class="result">
+                <h3>Context:</h3>
+                <p>{{ context }}</p>
 
-    {% if context %}
-        <h3>Context:</h3>
-        <p>{{ context }}</p>
+                <h3>Question:</h3>
+                <p>{{ question }}</p>
 
-        <h3>Question:</h3>
-        <p>{{ question }}</p>
-
-        <h3>Answer:</h3>
-        <p>{{ answer }}</p>
-    {% endif %}
+                <h3>Answer:</h3>
+                <p>{{ answer }}</p>
+            </div>
+        {% endif %}
+    </div>
+    </div>
 </body>
 </html>
