@@ -8,6 +8,6 @@
 ## Dataset
 The SQuAD dataset consists of questions posed by crowdworkers on a set of Wikipedia articles. You can access the dataset [here](https://huggingface.co/datasets/squad).
 
-For a quick overview [Video](https://drive.google.com/file/d/1LtJo1z5w26aAnolNQtlbsan5-mQG981C/view?usp=sharing). You can access the live version of this web application [here](https://doc-assistantgpt.onrender.com/). 
+For a quick overview [Video](https://drive.google.com/file/d/1xaW__7UkCUJy-TV6gf1gPjry5EeHmWeK/view?usp=sharing). You can access the live version of this web application [here](https://doc.onrender.com/). 
 
-![Image Alt Text](https://github.com/ThaminduSulakshana/DOC.AssistantGPT/blob/main/Screenshot%20(445).png)
+![Image Alt Text](https://github.com/ThaminduSulakshana/Question-answering-PyTorch/blob/main/Screenshot%20(465).png)
